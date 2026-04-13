@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Contact</title>
 
     <style>
@@ -31,6 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
 
         .container {
@@ -39,14 +42,28 @@
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        }
-
-        h1 {
             margin-bottom: 20px;
         }
 
-        p {
-            margin: 10px 0;
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            background: white;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
     </style>
 </head>
@@ -64,12 +81,24 @@
     </div>
 
     <div class="container-wrapper">
-        <div class="container">
-            <h1>Contact</h1>
-            <p>Name: Shakti Singh</p>
-            <p>Phone No: 8766332887</p>
-            <p>Email ID: shaktisingh@gmail.com</p>
-        </div>
+
+
+
+        <h2>Contact Details Table</h2>
+
+        <table>
+            <tr>
+                <th>Phone No</th>
+                <th>Email ID</th>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>8766332887</td>
+                <td>shiv1234@gmail.com</td>
+                <td>Narela</td>
+            </tr>
+        </table>
+
     </div>
 
 </body>
