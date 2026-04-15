@@ -1,106 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Golden Electronics</title>
+<title>About Us - Golden Electronics</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {
-            background-color: red;
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-        h1 {
-            text-align: center;
-        }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-        h2 {
-            text-align: center;
-            font-weight: normal;
-        }
+/* Header */
+header {
+  background-color: #f44336;
+  padding: 2px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
 
-        h3 {
-            margin-top: 30px;
-        }
+/* Navigation */
+nav {
+  float: left;
+  width: 30%;
+  height: auto;
+  background: #ccc;
+  padding: 20px;
+}
 
-        p {
-            margin-top: 20px;
-            text-align: justify;
-        }
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-        ul {
-            margin-top: 10px;
-        }
+nav ul li {
+  margin: 15px 0;
+}
 
-        .nav {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+nav ul li a {
+  display: block;
+  background-color: #f44336;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
 
-        .nav a {
-            margin: 0 10px;
-            text-decoration: none;
-            font-weight: bold;
-            color: black;
-        }
+nav ul li a:hover {
+  background-color: red;
+}
 
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-weight: bold;
-        }
-    </style>
+/* Article */
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: auto;
+}
+
+/* Clear floats */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 
 <body>
 
-    <div class="nav">
-        <a href="aboutus.html">About Us</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
-        <a href="form.html">Form</a>
-    </div>
+<header>
+  <h2>Golden Electronics</h2>
+</header>
 
-    <h1>Golden Electronics</h1>
+<section>
+  <nav>
+    <ul>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="form.html">Form</a></li>
+    </ul>
+  </nav>
 
-    <h1>Weighing Machine</h1>
+  <article>
+    <h1>About Us</h1>
 
-    <h2>Welcome to <strong>Golden Electronics</strong> — your trusted partner in precision weight solutions.</h2>
+    <h2>Weighing Machine Specialists</h2>
 
     <p>
-        With years of experience in the industry, we specialize in the manufacturing, repair, and supply of high-quality weighing machines designed to meet the needs of businesses across various sectors.
+      Welcome to <strong>Golden Electronics</strong> — your trusted partner in precision weight solutions.
     </p>
 
     <p>
-        At <strong>Golden Electronics</strong>, we understand that precise measurement is critical to your business operations. That’s why we focus on delivering machines that are not only technologically advanced but also easy to use and maintain.
+      With years of experience in the industry, we specialize in manufacturing, repair, and supply of high-quality weighing machines.
     </p>
 
     <p>
-        What sets us apart is our commitment to customer satisfaction. We provide personalized solutions, timely service, and expert support to help you choose the right weighing system for your needs.
+      We focus on delivering accurate, reliable, and easy-to-use machines for businesses across different sectors.
     </p>
 
     <p>
-        Our mission is to build long-term relationships with our customers by offering reliable products, honest pricing, and dependable service.
+      Our goal is to provide excellent service, honest pricing, and long-term customer relationships.
     </p>
 
     <h3>Why Choose Us</h3>
     <ul>
-        <li>High-accuracy and durable weighing machines</li>
-        <li>Customized solutions for different industries</li>
-        <li>Quick repair and maintenance services</li>
-        <li>Competitive pricing</li>
-        <li>Dedicated customer support</li>
+      <li>High-accuracy machines</li>
+      <li>Durable products</li>
+      <li>Fast repair service</li>
+      <li>Affordable pricing</li>
+      <li>Customer support</li>
     </ul>
 
-    <div class="footer">
-        <p>We look forward to serving you and being a part of your business growth.</p>
-        <p>— Golden Electronics Team</p>
-        <p>📞 9278128544</p>
-        <p>Shakti Singh</p>
-    </div>
+    <p><strong>Contact:</strong> 9278128544</p>
+    <p><strong>Name:</strong> Shakti Singh</p>
+
+  </article>
+</section>
+
+<footer>
+  <p>© 2026 Golden Electronics</p>
+</footer>
 
 </body>
 </html>
